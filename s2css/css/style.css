@@ -1,0 +1,114 @@
+/*
+selector{
+    atributo:valor
+}
+*/
+
+*{/*selector universal:selecciona todos los elementos de HTML*/
+    color:peru;
+}
+
+/*selector por tagname*/
+
+li{
+    font-style: italic;
+}
+
+/*selector de clase: selecciona todos los elementos cuyo atributo class contenga la clase indicada en la regla*/
+.text-underline{
+   text-decoration:underline; 
+}
+
+/*Selector por id*/
+#my-id{
+    /*border*/
+    border-top:2px dashed green;
+    border-bottom:3px dotted purple;
+    border-right:5px solid tomato;
+    border-left:3px dotted rgb(30, 20, 40);
+    border-color:peru;
+    border-style: double;
+    font-size:18px;
+}
+
+.color-pink{
+    color:pink;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:purple;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color:slategray !important;
+}
+
+
+/*selector por anidación*/
+#first-list li{
+    font-size:30px;
+}
+
+/*selector de descendiente inmediato*/
+#first-list > li{
+   text-transform:uppercase 
+}
+
+/*Selector de conjunción (ul#second-list)*/
+ul#second-list li{
+    font-size:20px;
+}
+
+/*selector de elemento adyacente*/
+li#choosen-one + li{
+    font-weight:bold;
+    color:purple;
+}
+
+/*selector de elementos subsecuentes*/
+li#choosen-one ~ li{
+    border-bottom:1px solid red;
+}
+
+/*pseudoclases*/
+
+ol li:first-of-type{
+    font-weight:bold;
+    font-size:25px;
+}
+
+ol li:last-of-type{
+    color:brown;
+    font-weight:bold;
+}
+
+ol li:nth-of-type(4){
+    text-transform:uppercase;
+}
+
+ol li:nth-of-type(odd){
+    background-color:#dadada;
+}
+
+ol li:nth-of-type(even){
+    background-color: #acacac;
+}
+
+ol li:nth-of-type(3n){
+    color:black;
+}
+
+#by-3 li:nth-of-type(3n){
+    background-color:magenta;
+}
+
+#by-3 li:nth-of-type(3n - 1){
+    background-color: orange;
+}
+
+#by-3 li:nth-of-type(3n - 2){
+    background-color:yellow;
+}
+
