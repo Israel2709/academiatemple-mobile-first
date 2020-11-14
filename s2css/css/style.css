@@ -14,6 +14,10 @@ li{
     font-style: italic;
 }
 
+p{
+    text-transform: capitalize;
+}
+
 /*selector de clase: selecciona todos los elementos cuyo atributo class contenga la clase indicada en la regla*/
 .text-underline{
    text-decoration:underline; 
@@ -29,6 +33,7 @@ li{
     border-color:peru;
     border-style: double;
     font-size:18px;
+    box-shadow: 5px 5px 5px red;
 }
 
 .color-pink{
