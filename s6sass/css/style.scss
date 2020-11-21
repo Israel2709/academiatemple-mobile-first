@@ -1,0 +1,123 @@
+$pink:     hsl(322, 100%, 66%);
+$pale-cyan:    hsl(193, 100%, 96%);
+$dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue:hsl(208, 11%, 55%);
+$open-sans: 'Open Sans', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$spacer: 1rem;
+
+*{
+    font-family: $open-sans;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-image:url("../images/bg-hero-mobile.svg");
+    background-size:cover;
+    background-position:top center;
+    background-repeat: no-repeat;
+}
+
+*[class^="btn-"]{
+    padding: 1rem;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.w-100{
+    width:100%;
+}
+
+.mb-2{
+    margin-bottom:$spacer * 2
+}
+
+.btn-{
+    &pink{
+        background-color: $pink;
+    }
+    &green{
+        background-color: green;
+    }
+}
+
+nav{
+    display:flex;
+    padding:$spacer;
+    justify-content: space-between;
+    height:70px;
+    align-items: center;
+    img{
+        width:100px;
+    }
+    button{
+        height:30px;
+        border-radius:15px;
+        background:white;
+        text-align: center;
+        padding:10px;
+        border:1px solid #acacac;
+        box-shadow:3px 3px 3px #dadada;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+main{
+    padding:$spacer;
+    section.heading{
+        display: flex;
+        flex-direction: column;
+        .left-side{
+            text-align: center;
+        }
+    }
+    section.features{
+        article{
+            border:1px solid #999;
+            border-radius:$spacer * .5;
+            box-shadow: 3px 3px 5px #acacac;
+            display: flex;
+            flex-direction:column;
+            padding:$spacer;
+            text-align: center;
+            align-items: center;
+            margin-bottom:$spacer;
+            img{
+                width: 100%;
+            }
+            h2{
+                font-weight:bold;
+            }
+            p{
+                color:#777;
+            }
+        }
+    }
+}
+
+@media only screen and ( min-width: 920px ){
+    main{
+        section.features{
+            article{
+                flex-direction: row;
+                img{
+                    width:50%;
+                }
+                &:nth-of-type( odd ){
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+}
