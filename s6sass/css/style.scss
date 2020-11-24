@@ -6,6 +6,12 @@ $open-sans: 'Open Sans', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $spacer: 1rem;
 
+@mixin flex-distribution( $direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
 *{
     font-family: $open-sans;
     box-sizing: border-box;
