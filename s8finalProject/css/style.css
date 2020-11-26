@@ -1,0 +1,93 @@
+.w-30 {
+  width: 30%;
+}
+
+.bg-pink {
+  background-color: #ff52bf;
+}
+
+.bg-pale-cyan {
+  background-color: #ebfbff;
+}
+
+.bg-dark-cyan {
+  background-color: #00252e;
+}
+
+.bg-grayish-blue {
+  background-color: #808d99;
+}
+
+nav .navbar-brand img {
+  width: 150px;
+}
+
+.footer-link {
+  padding-left: 30px;
+  background-position: left 5px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.footer-link.map {
+  background-image: url("../images/map-pin.png");
+}
+
+.footer-link.phone {
+  background-image: url("../images/phone.png");
+}
+
+.footer-link.mail {
+  background-image: url("../images/mail.png");
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer .floating-component {
+  z-index: 9999;
+  text-align: center;
+  width: calc( 100% - 30px);
+  top: calc( (135px / 2) * -1);
+  height: 135px;
+}
+
+footer .floating-component .btn {
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+footer .icon-wrapper img {
+  width: 30px;
+  -webkit-filter: invert(255);
+          filter: invert(255);
+  margin-left: 1rem;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+footer .icon-wrapper img:hover {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+@media only screen and (min-width: 768px) {
+  footer .floating-component {
+    width: 50%;
+    left: 25%;
+  }
+  footer .floating-component .btn {
+    width: 50%;
+  }
+  footer ul {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

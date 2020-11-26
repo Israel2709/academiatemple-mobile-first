@@ -1,0 +1,94 @@
+$pink:              hsl(322, 100%, 66%);
+$very-pale-cyan:    hsl(193, 100%, 96%);
+$very-dark-cyan:    hsl(192, 100%, 9%);
+$grayish-blue:      hsl(208, 11%, 55%);
+
+.w-30{
+    width:30%;
+}
+
+.bg-{
+    &pink{
+        background-color:$pink;
+    }
+    &pale-cyan{
+        background-color:$very-pale-cyan
+    }
+    &dark-cyan{
+        background-color:$very-dark-cyan
+    }
+    &grayish-blue{
+        background-color:$grayish-blue
+    }
+}
+
+nav{
+    .navbar-brand{
+        img{
+            width:150px;
+        }
+    }
+}
+
+.footer-link{
+    padding-left:30px;
+    background-position: left 5px;
+    background-size:20px;
+    background-repeat: no-repeat;
+
+    &.map{
+        background-image:url('../images/map-pin.png')
+    }
+    &.phone{
+        background-image:url('../images/phone.png')
+    }
+    &.mail{
+        background-image:url('../images/mail.png')
+    }
+}
+
+footer{
+    margin-top:100px;
+    .floating-component{
+        z-index: 9999;
+        text-align: center;
+        width: calc( 100% - 30px );
+        top: calc( (135px / 2) * -1 );
+        height: 135px;
+        .btn{
+            width:100%
+        }
+    }
+    ul{
+        list-style:none;
+        padding:0;
+        width: 100%;
+    }
+    .icon-wrapper{
+        img{
+            width:30px;
+            filter:invert(255);
+            margin-left:1rem;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover{
+                filter: invert(0)
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    footer{
+        .floating-component{
+            width:50%;
+            left:25%;
+            .btn{
+                width:50%
+            }
+        }
+        ul{
+            width:50%;
+        }
+    }
+}
